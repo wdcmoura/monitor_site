@@ -11,7 +11,7 @@ timeout = 60  # tempo máximo de resposta em segundos
 
 # Função para registrar logs de falha
 def registrar_falha(mensagem):
-    with open("falhas_unimed.log", "a") as log:
+    with open("falhas_site.log", "a") as log:
         log.write(f"{datetime.now()} - {mensagem}\n")
     print(f"{datetime.now()} - {mensagem}")
 
